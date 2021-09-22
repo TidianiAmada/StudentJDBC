@@ -1,0 +1,180 @@
+package com.saraya.model;
+
+import java.util.Date;
+
+import com.saraya.model.Student.Regime;
+
+
+public class Student {
+	
+	private String date_de_naissance;
+	private String prenom_nom;
+	
+	private String adresse;
+	
+	private Regime regime;
+	
+	private Long telephone;
+	
+	private int frais_inscription;
+	
+	private int mensualite;
+	
+	private String date_inscription;
+	enum Regime{
+		INTERNAT, EXTERNAT, DEMI_PENSION 
+	}
+
+	public Student() {
+		super();
+	}
+
+	public Student(String prenom_nom, String adresse) {
+		super();
+		this.prenom_nom = prenom_nom;
+		this.adresse = adresse;
+	}
+
+	public Student(String date_de_naissance, String prenom_nom, String adresse, Regime regime, Long telephone,
+			int frais_inscription, int mensualite, String date_inscription) {
+		super();
+		this.date_de_naissance = date_de_naissance;
+		this.prenom_nom = prenom_nom;
+		this.adresse = adresse;
+		this.regime = regime;
+		this.telephone = telephone;
+		this.frais_inscription = frais_inscription;
+		this.mensualite = mensualite;
+		this.date_inscription = date_inscription;
+	}
+
+	public Student(String date_de_naissance, String prenom_nom, Regime regime, String date_inscription) {
+		super();
+		this.date_de_naissance = date_de_naissance;
+		this.prenom_nom = prenom_nom;
+		this.regime = regime;
+		this.date_inscription = date_inscription;
+	}
+
+	/**
+	 * @return the date_de_naissance
+	 */
+	public String getDate_de_naissance() {
+		return date_de_naissance;
+	}
+
+	/**
+	 * @param date_de_naissance the date_de_naissance to set
+	 */
+	public void setDate_de_naissance(String date_de_naissance) {
+		this.date_de_naissance = date_de_naissance;
+	}
+
+	/**
+	 * @return the prenom_nom
+	 */
+	public String getPrenom_nom() {
+		return prenom_nom;
+	}
+
+	/**
+	 * @param prenom_nom the prenom_nom to set
+	 */
+	public void setPrenom_nom(String prenom_nom) {
+		this.prenom_nom = prenom_nom;
+	}
+
+	/**
+	 * @return the adresse
+	 */
+	public String getAdresse() {
+		return adresse;
+	}
+
+	/**
+	 * @param adresse the adresse to set
+	 */
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+
+	/**
+	 * @return the regime
+	 */
+	public Regime getRegime() {
+		return regime;
+	}
+
+	/**
+	 * @param regime the regime to set
+	 */
+	public void setRegime(Regime regime) {
+		this.regime = regime;
+	}
+
+	/**
+	 * @return the telephone
+	 */
+	public Long getTelephone() {
+		return telephone;
+	}
+
+	/**
+	 * @param telephone the telephone to set
+	 */
+	public void setTelephone(Long telephone) {
+		this.telephone = telephone;
+	}
+
+	/**
+	 * @return the frais_inscription
+	 */
+	public int getFrais_inscription() {
+		return frais_inscription;
+	}
+
+	/**
+	 * @param frais_inscription the frais_inscription to set
+	 */
+	public void setFrais_inscription(int frais_inscription) {
+		this.frais_inscription = frais_inscription;
+	}
+
+	/**
+	 * @return the mensualite
+	 */
+	public int getMensualite() {
+		return mensualite;
+	}
+
+	/**
+	 * @param mensualite the mensualite to set
+	 */
+	public void setMensualite(int mensualite) {
+		this.mensualite = mensualite;
+	}
+
+	/**
+	 * @return the date_inscription
+	 */
+	public String getDate_inscription() {
+		return date_inscription;
+	}
+
+	/**
+	 * @param date_inscription the date_inscription to set
+	 */
+	public void setDate_inscription(String date_inscription) {
+		this.date_inscription = date_inscription;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [date_de_naissance=" + date_de_naissance + ", prenom_nom=" + prenom_nom + ", adresse=" + adresse
+				+ ", regime=" + regime + ", telephone=" + telephone + ", frais_inscription=" + frais_inscription
+				+ ", mensualite=" + mensualite + ", date_inscription=" + date_inscription + "]";
+	}
+	
+	
+
+}
