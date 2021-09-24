@@ -33,7 +33,7 @@ public class StudentDAOImpl implements StudentDAO {
 			String password= (String) pp.get("PASSWORD");
 			Class.forName(dvname);
 			conn=DriverManager.getConnection(url, username, password);
-			String query = "insert into inscription_list (?,?) ";
+			String query = "insert into inscription_list values (?,?,?,?,?,?,?) ";
 			
 			pstm=conn.prepareStatement(query);
 //			pstm.setDate(1, new Date(1997, 05, 11));
@@ -41,8 +41,16 @@ public class StudentDAOImpl implements StudentDAO {
 //			pstm.setString(3, "Yoff Ngaparu");
 //			pstm.setDate(4, new Date(2014, 07, 25));
 			//pstm.setString(1,   student.getDate_de_naissance());
-			pstm.setString(1, student.getPrenom_nom());
-			pstm.setString(2, student.getAdresse());
+//			
+//			pstm.setString(1, student.getDate_de_naissance());
+//			pstm.setString(2, student.getPrenom_nom());
+//			pstm.setRef(3, null);
+//			pstm.setString(4, student.getDate_inscription());
+//			pstm.setString(5, student.getAdresse());
+//			pstm.setInt(6, student.getMensualite());
+//			
+//			pstm.setLong(7, student.getTelephone());
+			
 			//pstm.setString(4, student.getDate_inscription());
 			
 			pstm.execute();

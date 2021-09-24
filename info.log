@@ -33,3 +33,14 @@
 [main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
 [main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
 [main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.dao.StudentDAOImpl  - Query Executed !
+[main] INFO  com.saraya.schoolDBManager.App  - Error : No record found for the given prenom 
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
+[main] INFO  com.saraya.schoolDBManager.App  - Operation successfully excecuted
